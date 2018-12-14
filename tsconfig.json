@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "watch": true,
+        "lib": ["es2016"],
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "dist",
+        "declaration": true
+    },
+    "include": [
+        "src/**/*", "test/Collection.js", "test/Adapters.js"
+    ]
+}
