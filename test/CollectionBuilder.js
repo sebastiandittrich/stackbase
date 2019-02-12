@@ -41,4 +41,12 @@ describe('CollectionBuilder', function() {
             expect(state.item).to.be(undefined)
         })
     })
+
+    describe('#getActionDateByName()', function() {
+        it('returns the right date', function() {
+            const date = instance.getActionDateByName('123456-8954-234v63vtwe45-324v65-32-4v63q2462-vb3')
+            expect(date).to.be.a('number')
+            expect(date).to.be(123456)
+        })
+    })
   });

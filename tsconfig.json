@@ -8,6 +8,6 @@
         "declaration": true
     },
     "include": [
-        "src/**/*", "test/Collection.js", "test/Adapters.js"
+        "src/**/*", "test/Collection.js", "test/Adapters.js", "test/CollectionBuilder.js"
     ]
 }

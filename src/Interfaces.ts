@@ -1,17 +1,21 @@
-import { ID } from "./Types";
+import { ID, ActionName, Property } from "./Types";
 
 export interface Action {
     type: string
     timestamp?: number
-    name?: string
+    name?: ActionName
     value?: string
     id?: string
     path?: string
 }
 
+export interface Collection extends Array<Document> {
+    [index: number]: Document
+}
+
 export interface Document {
-    id: ID
-    [key:string]: any
+    id?: ID
+    [key:string]: Property
 }
 
 export interface StorageAdapter {
